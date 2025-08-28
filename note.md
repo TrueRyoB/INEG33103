@@ -13,13 +13,21 @@ $ V(X) = \frac{\sum{(X-E(X))^2}}{N} $
 ### Binomial distribution
 Bernoulli trial is a building block of a random experiment that is indenepdent from each other (=thereby the probability of a success is constant) and yields only TWO possible outcomes; a binomial distribution describes the # of successes in a FIXED number of Bernoulli trials; its mean is always at the median point for its ubiquitous distribution.
 $ P(X = k) = (n, k)p^k(1-p)^(n-k) $
-$ E(X) = np $ 
+$ E(X) = \sum{x_i * f(x_i)} $ 
 
 ### Poisson Distribution
 Models the # of events occuring within a FIXED interval duration, given a known average rate of occurence (λ) more than 0. A formula below represents the probability of a given number of events occuring i a fixed interval of time.
-$ P(X = k) = (e^(-λ))\frac{λ^k}{k!} $
+$$ 
+P(X = k) = \frac{1}{(e^λ)}*\frac{λ^k}{k!} 
+$$
+Related equations for poisson distribution<br>
 $ λ = E(X) $
 $ V(X) = λ $
+
+Binomial theorem<br>
+$$
+(x+y)^n = \sum {C(n, k)*x^k*y^{n-k}}
+$$
 
 
 - Discrete RV
